@@ -11,18 +11,19 @@ of receipts and expense line items!
 
 Features include:
 
-* Everything is run locally -- your username and password never get trasmitted to anyone other than the McKinsey expense system
+* Everything is run locally -- your McKinsey username and password never get trasmitted to anyone other than the McKinsey expense system
 * Support for 5 most commonly used expense types (Meals 1/2/3, Taxi, Hotel)
 * Batch uploading of receipts (upload all files in a folder)
 * International currencies and locations support
 
 ## Usage
 
-1. Download the ExpensesPlus.zip in the `Use this` folder of the repository
+1. [Download the ExpensesPlus.zip](https://github.com/pxpeterxu/expensesplus/raw/master/Use%20this/ExpensesPlus.zip) in the `Use this` folder of the repository
 2. Extract it to a folder
 3. Open the "ExpensesPlus.xlsm" file, and enable macros when prompted
 4. Enter your expense details on each of the tabs
 5. Press the "Create expense report" button and follow the instructions there
+    * Note: you may get an error message from Symantec since the file is rarely found. Press "Allow this file" when you see it
 
 ## Developing
 
