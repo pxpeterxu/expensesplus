@@ -1,5 +1,7 @@
 # ExpensesPlus
 
+![Screenshot of ExpensesPlus spreadsheet](docs/screenshot.png)
+
 Originally authored by Peter Xu and maintained by the McKinsey community.
 
 ExpensesPlus is a tool to submit expenses directly from Excel spreadsheets to
@@ -9,6 +11,7 @@ of receipts and expense line items!
 
 Features include:
 
+* Everything is run locally -- your username and password never get trasmitted to anyone other than the McKinsey expense system
 * Support for 5 most commonly used expense types (Meals 1/2/3, Taxi, Hotel)
 * Batch uploading of receipts (upload all files in a folder)
 * International currencies and locations support
