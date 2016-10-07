@@ -1,0 +1,277 @@
+Types of expenses:
+46001	Air Travel
+46016	Hotel
+-1999586252	Meals 1 - Travel Dining Alone
+-1999586260	Meals 2 - In Office
+3083586	Meals 3 - Group Outside Office
+46040	Mileage : Personal Car
+46025	Parking / Toll / Other Travel
+46034	Rail / Subway
+46004	Rental Car
+-1999999627	Taxi / Car Services
+46035	Telecom
+-1999999612	Xpenses Other
+
+
+Meals 1 and Meals 3 types:
+type:MealType;id:-1999904927;	Breakfast
+type:MealType;id:-1999904919;	Dinner
+type:MealType;id:-1999904923;	Lunch
+
+
+Meals 2 types:
+type:SubExpenseType2;id:-1777822879;	Meal Working Late
+type:SubExpenseType2;id:-1777822907;	Office Events
+type:SubExpenseType2;id:-1999992739;	Working Meetings
+
+
+Meals 3 types:
+type:SubExpenseType3;id:-1975427178;	Client Attended
+type:SubExpenseType3;id:-1777822769;	Occasional Team Celebration
+type:SubExpenseType3;id:-1777822797;	Team Discussion
+
+
+Vendors:
+Airlines
+type:Vendor;id:68020;	Air Canada
+type:Vendor;id:68021;	Air France
+type:Vendor;id:68022;	Alaska Airlines
+type:Vendor;id:68023;	American Airlines
+type:Vendor;id:3103254;	America West
+type:Vendor;id:68025;	British Airways
+type:Vendor;id:68026;	Canadian Airlines
+type:Vendor;id:68027;	Continental Airlines
+type:Vendor;id:68028;	Delta Airlines
+type:Vendor;id:3103255;	Finnair
+type:Vendor;id:3103256;	Hawaiian Air
+type:Vendor;id:68029;	Japan Airlines
+type:Vendor;id:3103259;	Korean Airlines
+type:Vendor;id:68030;	Lufthansa Airlines
+type:Vendor;id:68031;	Mexicana Airlines
+type:Vendor;id:68032;	Northwest Airlines
+type:Vendor;id:3103260;	Philippine Airlines
+type:Vendor;id:68033;	Qantas Airlines
+type:Vendor;id:3103261;	Scandinavian Airline System
+type:Vendor;id:68034;	Singapore Airlines
+type:Vendor;id:3103262;	South African Airways
+type:Vendor;id:68035;	Southwest Airlines
+type:Vendor;id:3103263;	Swissair
+type:Vendor;id:68036;	TWA
+type:Vendor;id:68037;	United Airlines
+type:Vendor;id:68038;	US Airways
+
+
+Hotels
+type:Vendor;id:68100;	Best Western
+type:Vendor;id:68101;	Clarion
+type:Vendor;id:68102;	Comfort Inn
+type:Vendor;id:3103265;	Courtyard Inns
+type:Vendor;id:3103266;	Crowne Plaza Hotels
+type:Vendor;id:3103267;	Doubletree Hotels
+type:Vendor;id:68103;	Embassy Suites
+type:Vendor;id:68104;	Hilton
+type:Vendor;id:3103268;	Holiday Inns
+type:Vendor;id:68105;	Howard Johnson
+type:Vendor;id:68106;	Hyatt
+type:Vendor;id:68108;	Marriott
+type:Vendor;id:68109;	Meridian
+type:Vendor;id:68110;	Omni
+type:Vendor;id:68111;	Radisson
+type:Vendor;id:68112;	Ramada Inn
+type:Vendor;id:68113;	Red Lion Hotels & Inns
+type:Vendor;id:68114;	Regent
+type:Vendor;id:3103269;	Renaissance Hotels
+type:Vendor;id:68115;	Residence Inn
+type:Vendor;id:68116;	Ritz-Carlton
+type:Vendor;id:68117;	Sheraton
+type:Vendor;id:68118;	Sofitel
+type:Vendor;id:68119;	Westin
+type:Vendor;id:3103270;	Wyndham Hotels
+
+
+Airline classes
+
+type:AirlineServiceClass;id:3062073;	Business
+type:AirlineServiceClass;id:3062071;	Economy / Coach
+type:AirlineServiceClass;id:3062072;	First Class
+
+
+Currencies
+3200717	AED - UAE Dirham
+3500510	AFN - Afghani
+3500508	ALL - Lek
+3500517	AMD - Armenian Dram
+3200649	ANG - Netherlands Antillian Guilder
+3500514	AOA - Kwanza
+3500516	ARS - Argentine Peso
+3500520	AUD - Australian Dollar
+3500519	AWG - Aruban Guilder
+-1982308695	AZN - Azerbaijanian manat
+3500535	BAM - Convertible Marks
+3500526	BBD - Barbados Dollar
+3500525	BDT - Taka
+3500539	BGL - Bulgaria Lev
+3074894	BGN - Bulgarian Lev
+3500524	BHD - Bahraini Dinar
+3500541	BIF - Burundi Franc
+3500531	BMD - Bermudian Dollar
+3500538	BND - Brunei Dollar
+3500533	BOB - Boliviano
+3074893	BOV - Mvdol
+3500536	BRL - Brazilian Real
+3500523	BSD - Bahamian Dollar
+3074906	BTN - Ngultrum
+3500534	BWP - Pula
+3500527	BYR - Belarus Ruble
+3500529	BZD - Belize Dollar
+3500504	CAD - Canadian Dollar
+3074914	CDF - Franc Congolais
+3200700	CHF - Swiss Franc
+3074895	CLF - Unidades de fomento
+3500548	CLP - Chilean Peso
+3500549	CNY - Yuan Renminbi
+3500552	COP - Colombian Peso
+3500556	CRC - Costa Rican Colon
+3200736	CUP - Cuban Peso
+3500544	CVE - Cape Verde Escudo
+3500559	CYP - Cyprus Pound
+3500560	CZK - Czech Koruna
+3500562	DJF - Djibouti Franc
+3500561	DKK - Danish Krone
+3500564	DOP - Dominican Peso
+3500511	DZD - Algerian Dinar
+3500570	EEK - Kroon
+3500567	EGP - Egyptian Pound
+3074919	ERN - Nakfa
+3500571	ETB - Ethiopian Birr
+3500572	EUR - Euro
+3500575	FJD - Fiji Dollar
+3500573	FKP - Falkland Islands Pound
+3500502	GBP - Pound Sterling
+3074881	GEL - Lari
+3200583	GHS - Ghanaian New Cedi
+3074924	GIP - Gibraltar Pound
+3500581	GMD - Dalasi
+3200591	GNF - Guinea Franc
+3200590	GTQ - Quetzal
+3074883	GWP - Guinea-Bissau Peso
+3200593	GYD - Guyana Dollar
+3200597	HKD - Hong Kong Dollar
+3200596	HNL - Lempira
+3500558	HRK - Croatian Kuna
+3200594	HTG - Gourde
+3200598	HUF - Forint
+3200734	IDR - Rupiah
+3200605	ILS - New Israeli Sheqel
+3200600	INR - Indian Rupee
+3200603	IQD - Iraqi Dinar
+3200602	IRR - Iranian Rial
+3200599	ISK - Iceland Krona
+3200607	JMD - Jamaican Dollar
+3200608	JOD - Jordanian Dinar
+3500507	JPY - Yen
+3200610	KES - Kenyan Shilling
+3200615	KGS - Som
+3500542	KHR - Riel
+3500553	KMF - Comoro Franc
+3200612	KPW - North Korean Won
+3200613	KRW - South Korean Won
+3200614	KWD - Kuwaiti Dinar
+3500545	KYD - Cayman Islands Dollar
+3200609	KZT - Tenge
+3200616	LAK - Kip
+3200618	LBP - Lebanese Pound
+3200694	LKR - Sri Lanka Rupee
+3200620	LRD - Liberian Dollar
+3200619	LSL - Loti
+3200623	LTL - Lithuanian Litus
+3200617	LVL - Latvian Lats
+3200621	LYD - Libyan Dinar
+3200642	MAD - Moroccan Dirham
+3200638	MDL - Moldovan Leu
+3200627	MGA - Malagasy Ariary
+3200626	MKD - Denar
+3074938	MMK - Kyat
+3200640	MNT - Tugrik
+3074931	MOP - Pataca
+3200635	MRO - Ouguiya
+3200632	MTL - Maltese Lira
+3200636	MUR - Mauritius Rupee
+3200630	MVR - Rufiyaa
+3200628	MWK - Malawi Kwacha
+3500505	MXN - Mexican Peso
+3200629	MYR - Malaysian Ringgit
+3200643	MZN - Metical
+3200645	NAD - Namibia Dollar
+3200654	NGN - Naira
+3200652	NIO - Cordoba Oro
+3200658	NOK - Norwegian Krone
+3200647	NPR - Nepalese Rupee
+3200651	NZD - New Zealand Dollar
+3200659	OMR - Rial Omani
+3200662	PAB - Balboa
+3200665	PEN - Nuevo Sol
+3200663	PGK - Kina
+3200666	PHP - Philippine Peso
+3200660	PKR - Pakistan Rupee
+3200668	PLN - Zloty
+3200664	PYG - Guarani
+3200671	QAR - Qatari Rial
+3200673	RON - New Romanian Leu
+-1994643570	RSD - Serbian Dinar
+3200674	RUB - Russian Ruble
+3200675	RWF - Rwanda Franc
+3200684	SAR - Saudi Riyal
+3200690	SBD - Solomon Islands Dollar
+3074953	SCR - Seychelles Rupee
+3200695	SDG - Sudanese Pound
+3200699	SEK - Swedish Krona
+3200687	SGD - Singapore Dollar
+3200676	SHP - Saint Helena Pound
+3200689	SIT - Tolar
+3200688	SKK - Slovak Koruna
+3200686	SLL - Leone
+3200691	SOS - Somali Shilling
+3200696	SRD - Surinam Dollar
+3200683	STD - Dobra
+3500568	SVC - El Salvador Colon
+3200701	SYP - Syrian Pound
+3200698	SZL - Lilangeni
+3200705	THB - Baht
+3074897	TJS - Somoni
+-1972225651	TMT - Turkmenistan New Manat
+3200710	TND - Tunisian Dinar
+3200708	TOP - Pa'anga
+3074917	TPE - Timor Escudo
+3074966	TRY - Turkish New Lira
+3200709	TTD - Trinidad and Tobago Dollar
+3200702	TWD - Taiwan Dollar
+3200704	TZS - Tanzanian Shilling
+3074887	UAH - Hryvnia
+3074886	UGX - Uganda Shilling
+3500501	USD - US Dollar
+3200719	UYU - Peso Uruguayo
+3200720	UZS - Uzbekistan Sum
+3200723	VEB - Bolivar
+-1992873540	VEF - Venezuelan bolivar fuerte
+3200724	VND - Dong
+3200721	VUV - Vatu
+3074950	WST - Tala
+3500543	XAF - CFA Franc BEAC
+3500515	XCD - East Caribbean Dollar
+3500540	XOF - CFA Franc BCEAO
+3500578	XPF - CFP Franc
+3200729	YER - Yemeni Rial
+3074965	YUM - Yugoslavian Dinar
+3200692	ZAR - Rand
+3200732	ZMK - Zambia Kwacha
+3200733	ZWD - Zimbabwe Dollar
+
+type:FromTo (for car service/taxi)
+-1999888587	Airport
+-1999888583	Client
+-1999888591	Home
+-1999888579	Hotel
+-1999888575	Office
+-1999888571	Other
+-1986917620	Train Station</option>

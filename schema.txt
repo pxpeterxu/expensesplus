@@ -1,0 +1,693 @@
+Expense report schema:
+https://c309.extensity-hosting.com/er/suite/common/initial_tab_frame.jsf
+
+High-priority items:
+* Hotel
+* Meals 1 - Travel Dining Alone
+* Meals 2 - In Office
+* Taxi / Car Services
+
+
+
+To add:
+https://c309.extensity-hosting.com/er/app/document/er_general.jsf
+'jsf_tree_64': '697',
+'jsf_state_64': '697',
+'jsf_viewid': '/app/document/er_general.jsp',
+'generalForm:er_general_instructions_panel:newExpenseTypeVal': 'type:ExpenseType;id:46016;',
+'generalForm:er_general_instructions_panel:newExpenseTypeBtn': 'Add Expense',
+'generalForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'transitionId': '',
+'skipRequiredValidations': '',
+'userId': '',
+'documentId': '',
+''generalForm:_link_hidden_': ''
+
+
+https://c309.extensity-hosting.com/er/app/er_items.jsf
+'jsf_tree_64': '5762',
+'jsf_state_64': '5762',
+'jsf_viewid': '/app/er_items.jsp',
+'mainForm:newExpenseTypeVal': 'type:ExpenseType;id:46001;',
+'mainForm:newExpenseTypeBtn': 'Add Expense',
+'mainForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'transitionId': '',
+'skipRequiredValidations': '',
+'mainForm:_link_hidden_': '',
+'documentId': ''
+
+
+General
+
+Lookup for locations
+https://c309.extensity-hosting.com/er/app/er_line.jsf?affectedAjaxComponent=editItemForm:ADC_3048906
+'editItemForm:ADC_3048906': 'Denver',
+'jsf_tree_64': '5802',
+'jsf_state_64': '5802',
+'_': ''
+
+
+
+Air Travel:
+'jsf_tree_64': '5768',
+'jsf_state_64': '5768',
+'jsf_viewid': '/app/er_line.jsp',
+'editItemForm:erLineStandardToggleState': 'true',
+'editItemForm:date-PFAField': '12/10/14',
+'editItemForm:amountVal-PFAField': '100.00',
+'editItemForm:currencyVal-PFAChoice': '3500501',
+'editItemForm:ADC_-1999999888': 'type:SubExpenseType;id:-1999992755;',
+'editItemForm:ADC_3061992': '123456',
+'editItemForm:ADC_3048909': 'last minute', # Reasons for not booking through Travel
+'editItemForm:ADC_3061980': 'type:AirlineServiceClass;id:3062071;', # Class
+'editItemForm:ADC_3048902': 'type:Vendor;id:68020;', # Airline
+'editItemForm:ADC_3048906_choice': '3001280',
+'editItemForm:ADC_3048906': 'San Francisco/California/United States',
+'editItemForm:receipt-PFAField': 'true',
+'editItemForm:erLineAllocationToggleState': 'true',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice_choice': '-1638276952',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice': 'NW0232',
+'editItemForm:erLineOptionalADCToggleState': 'true',
+'editItemForm:erLineNoteToggleState': 'true',
+'editItemForm:note_panel:noteFld': '',
+'editItemForm:saveBtn2': 'Save',
+'editItemForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'chooserId': '',
+'corpDataName': '',
+'allocationName': '',
+'skipRequiredValidations': '',
+'corpDataListName': '',
+'bobTypeName': '',
+'editingLineItem': '',
+'item': '',
+'bobElement': '',
+'lineItemId': '',
+'targetName': '',
+'editItemForm:_link_hidden_': ''
+
+
+Hotels
+
+1. Standard create new
+2. Itemize: (basically a submit with er_line)
+https://c309.extensity-hosting.com/er/app/er_line.jsf
+'jsf_tree_64': '5781',
+'jsf_state_64': '5781',
+'jsf_viewid': '/app/er_line.jsp',
+'editItemForm:erLineStandardToggleState': 'true',
+'editItemForm:date-PFAField': '12/10/14',
+'editItemForm:amountVal-PFAField': '150.00',
+'editItemForm:currencyVal-PFAChoice': '3500501',
+'editItemForm:ADC_3048906_choice': '3001280',
+'editItemForm:ADC_3048906': 'San Francisco/California/United States',
+'editItemForm:receipt-PFAField': 'true',
+'editItemForm:erLineAllocationToggleState': 'true',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice_choice': '-1638276952',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice': 'NW0232',
+'editItemForm:erLineOptionalADCToggleState': 'true',
+'editItemForm:ADC_3048902': '',
+'editItemForm:erLineNoteToggleState': 'true',
+'editItemForm:note_panel:noteFld': '',
+'editItemForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'chooserId': '',
+'corpDataName': '',
+'allocationName': '',
+'skipRequiredValidations': '',
+'bobTypeName': '',
+'corpDataListName': '',
+'editingLineItem': 'true',
+'bobElement': '',
+'item': '',
+'lineItemId': '2140516843',
+'targetName': '',
+'editItemForm:_link_hidden_': 'editItemForm:addItemizeBtn',
+
+3. Quick Itemize button
+https://c309.extensity-hosting.com/er/app/er_line_itemization.jsf
+'jsf_tree_64': '5782',
+'jsf_state_64': '5782',
+'jsf_viewid': '/app/er_line_itemization.jsp',
+'editItemizationsForm:newExpenseTypeVal': '',
+'editItemizationsForm:quickItemizationBtn': 'Quick Itemize',
+'editItemizationsForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'editItemizationsForm:_link_hidden_': ''
+
+4. Saving quick itemize
+https://c309.extensity-hosting.com/er/app/hotel_wizard.jsf
+'jsf_tree_64': '5783',
+'jsf_state_64': '5783',
+'jsf_viewid': '/app/hotel_wizard.jsp',
+'hotelWizardForm:startDateVal': '12/10/14',
+'hotelWizardForm:numberDaysVal': '3',
+'hotelWizardForm:lodgingChargesGroup_46021': '30', # Taxes
+'hotelWizardForm:lodgingChargesGroup_46029': '10',
+'hotelWizardForm:lodgingChargesGroup_46029_1': '',
+'hotelWizardForm:lodgingChargesGroup_46029_2': '',
+'hotelWizardForm:lodgingChargesGroup_46029_3': '',
+'hotelWizardForm:lodgingChargesGroup_46029_4': '',
+'hotelWizardForm:otherChargesGroup_-1999586252': '5', # Breakfast
+'hotelWizardForm:otherChargesGroup_46025': '2', # Parking / Toll / Other
+'hotelWizardForm:otherChargesGroup_-1999898515': '3', # Internet - Wifi
+'hotelWizardForm:continue2Btn': 'Continue',
+'hotelWizardForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'hotelWizardForm:_link_hidden_': ''
+
+5. Finish itemization
+https://c309.extensity-hosting.com/er/app/er_line_itemization.jsf
+'jsf_tree_64': '5792',
+'jsf_state_64': '5792',
+'jsf_viewid': '/app/er_line_itemization.jsp',
+'editItemizationsForm:newExpenseTypeVal': '',
+'editItemizationsForm:saveBtn2': 'Finish Itemization',
+'editItemizationsForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'editItemizationsForm:_link_hidden_': '',
+'lineItemId': '',
+'childLineId': '',
+'copy': ''
+
+6. Save hotel bill
+'jsf_tree_64': '5795',
+'jsf_state_64': '5795',
+'jsf_viewid': '/app/er_line.jsp',
+'editItemForm:erLineStandardToggleState': 'true',
+'editItemForm:date-PFAField': '12/10/14',
+'editItemForm:amountVal-PFAField': '150.00',
+'editItemForm:currencyVal-PFAChoice': '3500501',
+'editItemForm:ADC_3048906_choice': '3001280', # Location code
+'editItemForm:ADC_3048906': 'San Francisco/California/United States',
+'editItemForm:receipt-PFAField': 'true',
+'editItemForm:erLineOptionalADCToggleState': 'true',
+'editItemForm:ADC_3048902': 'type:Vendor;id:68100;', # Hotel vendor code
+'editItemForm:erLineNoteToggleState': 'true',
+'editItemForm:note_panel:noteFld': 'Some test notes',
+'editItemForm:saveBtn2': 'Save',
+'editItemForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'corpDataName': '',
+'skipRequiredValidations': '',
+'bobTypeName': '',
+'corpDataListName': '',
+'editingLineItem': '',
+'bobElement': '',
+'lineItemId': '',
+'targetName': '',
+'editItemForm:_link_hidden_': '',
+
+
+
+Meals 1 - Travel Dining Alone
+1. Standard "Add Expense"
+2. Add custom vendors (optional)
+a. First save form (see 3. Submit)
+b. Add the entry
+https://c309.extensity-hosting.com/er/suite/corpdata/add_corp_data_screen.jsf
+'jsf_tree_64': '5923',
+'jsf_state_64': '5923',
+'jsf_viewid': '/suite/corpdata/add_corp_data_screen.jsp',
+'addCorpDataScreenForm:addCorpDataScreenTabbedPane_indexSubmit': '',
+'addCorpDataScreenForm:add_corp_data_screen_create_tab:addCorpDataVal': 'Test2',
+'addCorpDataScreenForm:saveBtn': 'Save',
+'addCorpDataScreenForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'skipRequiredValidations': '',
+'itemId': '',
+'addCorpDataScreenForm:_link_hidden_': ''
+
+Parse the response for vendors:
+<option value="type:Vendor;id:2140517240;">Test</option>	<option value="type:Vendor;id:2140517641;" selected="selected">Test2</option>
+
+
+3. Submit
+https://c309.extensity-hosting.com/er/app/er_line.jsf
+'jsf_tree_64': '5844',
+'jsf_state_64': '5844',
+'jsf_viewid': '/app/er_line.jsp',
+'editItemForm:erLineStandardToggleState': 'true',
+'editItemForm:date-PFAField': '12/10/14',
+'editItemForm:amountVal-PFAField': '15.00',
+'editItemForm:currencyVal-PFAChoice': '3500501',
+'editItemForm:ADC_-1999999878': 'type:MealType;id:-1999904927;',
+'editItemForm:ADC_3048906_choice': '3001280',
+'editItemForm:ADC_3048906': 'San Francisco/California/United States',
+'editItemForm:receipt-PFAField': 'true',
+'editItemForm:erLineAllocationToggleState': 'true',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice_choice': '-1638276952',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice': 'NW0232',
+'editItemForm:erLineOptionalADCToggleState': 'true',
+'editItemForm:ADC_3048902': 'type:Vendor;id:2140517240;',
+'editItemForm:erLineNoteToggleState': 'true',
+'editItemForm:note_panel:noteFld': 'Some random test notes (Notes field)',
+'editItemForm:saveBtn2': 'Save',
+'editItemForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'chooserId': '',
+'corpDataName': '',
+'allocationName': '',
+'skipRequiredValidations': '',
+'bobTypeName': '',
+'corpDataListName': '',
+'editingLineItem': '',
+'bobElement': '',
+'item': '',
+'lineItemId': '',
+'targetName': '',
+'editItemForm:_link_hidden_': '',
+
+
+
+Meals 2 - In Office
+1. Standard "Add Expense"
+2. Add vendors
+a. Submit the form, except with extra
+'targetName': 'form.currentERLineItem.extensions['vendorName']',
+'editItemForm:_link_hidden_': 'editItemForm:ADC_3048902Btn'
+
+https://c309.extensity-hosting.com/er/app/er_line.jsf
+'jsf_tree_64': '5969',
+'jsf_state_64': '5969',
+'jsf_viewid': '/app/er_line.jsp',
+'editItemForm:erLineStandardToggleState': 'true',
+'editItemForm:date-PFAField': '12/10/14',
+'editItemForm:amountVal-PFAField': '15.00',
+'editItemForm:currencyVal-PFAChoice': '3500501',
+'editItemForm:ADC_1000080050': 'type:SubExpenseType2;id:-1777822879;',
+'editItemForm:ADC_3048909': '2', # number of attendees
+'editItemForm:ADC_3048906_choice': '3001280',
+'editItemForm:ADC_3048906': 'San Francisco/California/United States',
+'editItemForm:receipt-PFAField': 'true',
+'editItemForm:erLineAllocationToggleState': 'true',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice_choice': '-1638276952',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice': 'NW0232',
+'editItemForm:erLineOptionalADCToggleState': 'true',
+'editItemForm:ADC_3048902': 'type:Vendor;id:-1582587955;',
+'editItemForm:erLineNoteToggleState': 'true',
+'editItemForm:note_panel:noteFld': 'Notes test',
+'editItemForm:saveBtn2': 'Save',
+'editItemForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'chooserId': '',
+'corpDataName': '',
+'allocationName': '',
+'skipRequiredValidations': '',
+'bobTypeName': '',
+'corpDataListName': '',
+'editingLineItem': '',
+'bobElement': '',
+'item': '',
+'lineItemId': '',
+'targetName': '',
+'editItemForm:_link_hidden_': '',
+
+
+Meals 3
+1. Standard "Add expense"
+To see existing Vendor option choices:
+Content:
+<label id="editItemForm:ADC_3048902Lbl" title="Select / Enter the vendor, Restaurant or name of Establisment" for="editItemForm:ADC_3048902">Vendor / Establishment</label><br><select id="editItemForm:ADC_3048902" name="editItemForm:ADC_3048902" size="1" title="Select / Enter the vendor, Restaurant or name of Establisment">	<option value="" selected="selected"></option>	<option value="type:Vendor;id:2140052648;">Test</option></select>
+
+2. Add custom vendors
+https://c309.extensity-hosting.com/er/app/er_line.jsf
+'jsf_tree_64': '6003',
+'jsf_state_64': '6003',
+'jsf_viewid': '/app/er_line.jsp',
+'editItemForm:erLineStandardToggleState': 'true',
+'editItemForm:date-PFAField': '12/10/14',
+'editItemForm:amountVal-PFAField': '15',
+'editItemForm:currencyVal-PFAChoice': '3500501',
+'editItemForm:ADC_1000080051': 'type:SubExpenseType3;id:-1777822769;',
+'editItemForm:ADC_-1999999878': 'type:MealType;id:-1999904927;',
+'editItemForm:ADC_3048902': '2', # number of participants
+'editItemForm:ADC_3048906_choice': '3001280',
+'editItemForm:ADC_3048906': 'San Francisco/California/United States',
+'editItemForm:receipt-PFAField': 'true',
+'editItemForm:erLineGuestToggleState': 'true',
+'editItemForm:erLineAllocationToggleState': 'true',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice_choice': '-1638276952',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice': 'NW0232',
+'editItemForm:erLineOptionalADCToggleState': 'true',
+'editItemForm:erLineNoteToggleState': 'true',
+'editItemForm:note_panel:noteFld': '',
+'editItemForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'chooserId': '',
+'corpDataName': 'Vendor / Establishment',
+'allocationName': '',
+'skipRequiredValidations': 'true',
+'corpDataListName': '',
+'bobTypeName': 'Vendor',
+'editingLineItem': '',
+'item': '',
+'bobElement': 'vendorName',
+'lineItemId': '',
+'targetName': 'form.currentERLineItem.extensions['vendorName']',
+'editItemForm:_link_hidden_': 'editItemForm:ADC_3048902Btn'
+
+
+b. Actually add the item
+https://c309.extensity-hosting.com/er/suite/corpdata/add_corp_data_screen.jsf
+'jsf_tree_64': '6016',
+'jsf_state_64': '6016',
+'jsf_viewid': '/suite/corpdata/add_corp_data_screen.jsp',
+'addCorpDataScreenForm:addCorpDataScreenTabbedPane_indexSubmit': '',
+'addCorpDataScreenForm:add_corp_data_screen_create_tab:addCorpDataVal': 'Test',
+'addCorpDataScreenForm:saveBtn': 'Save',
+'addCorpDataScreenForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'addCorpDataScreenForm:_link_hidden_': ''
+
+3. Add the attendees
+- Add self: just do normal submit, except:
+Add extra 'editItemForm:guest_wrapper_panel:addSelfBtn': 'Add Self',
+
+- Add others:
+a. Open up the search screen
+https://c309.extensity-hosting.com/er/app/er_line.jsf
+'jsf_tree_64': '766',
+'jsf_state_64': '766',
+'jsf_viewid': '/app/er_line.jsp',
+'editItemForm:erLineStandardToggleState': 'true',
+'editItemForm:date-PFAField': '',
+'editItemForm:amountVal-PFAField': '',
+'editItemForm:currencyVal-PFAChoice': '3500501',
+'editItemForm:ADC_1000080051': '',
+'editItemForm:ADC_-1999999878': '',
+'editItemForm:ADC_3048902': '',
+'editItemForm:ADC_3048906_choice': '',
+'editItemForm:ADC_3048906': '',
+'editItemForm:receipt-PFAField': 'true',
+'editItemForm:erLineGuestToggleState': 'true',
+'editItemForm:guest_wrapper_panel:addBtn': 'Add',
+'editItemForm:erLineAllocationToggleState': 'true',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice_choice': '',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice': '',
+'editItemForm:erLineOptionalADCToggleState': 'true',
+'editItemForm:erLineNoteToggleState': 'true',
+'editItemForm:note_panel:noteFld': '',
+'editItemForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'chooserId': '',
+'corpDataName': '',
+'allocationName': '',
+'skipRequiredValidations': '',
+'corpDataListName': '',
+'bobTypeName': '',
+'editingLineItem': '',
+'item': '',
+'bobElement': '',
+'lineItemId': '',
+'targetName': '',
+'editItemForm:_link_hidden_': ''
+
+b. Search for a person
+https://c309.extensity-hosting.com/er/suite/guest/guest_chooser.jsf
+'jsf_tree_64': '772',
+'jsf_state_64': '772',
+'jsf_viewid': '/suite/guest/guest_chooser.jsp',
+'guestForm:guestChooserTabbedPane_indexSubmit': '',
+'guestForm:guest_chooser_search_tab:namesVal': 'Sarah Lorenzana;Peter Xu',
+'guestForm:guest_chooser_search_tab:guestType-PFAChoice': '',
+'guestForm:guest_chooser_search_tab:title-PFAField': '',
+'guestForm:guest_chooser_search_tab:company-PFAField': '',
+'guestForm:guest_chooser_search_tab:addressChoice': '',
+'guestForm:guest_chooser_search_tab:isPersonal-PFAChoice': '',
+'guestForm:guest_chooser_search_tab:guestListChoice': '',
+'guestForm:guest_chooser_search_tab:searchBtn': 'Search',
+'guestForm:guest_chooser_recent_tab:recentRadio': 'true',
+'guestForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'skipRequiredValidations': '',
+'corpDataListName': '',
+'item': '',
+'targetName': '',
+'guestForm:_link_hidden_': ''
+
+Results:
+<tr class="itemTable_SortHeader"><th class="table_ColumnCenter"><input type="checkbox" name="guestForm:guest_chooser_search_tab:_id68:searchSelectAll" id="guestForm:guest_chooser_search_tab:_id68:searchSelectAll" value="true" onclick="checkAllCheckBoxes(this, 'searchSelectCheckbox'); updateCheckboxAssociatedButtons('searchSelectCheckbox', 'addBtn1');" /></th><th class="table_ColumnAction"><span id="guestForm:guest_chooser_search_tab:_id68:actionHeader"></span></th><th class="table_ColumnLeft"><a href="#" onclick="clear_guestForm();document.forms['guestForm'].elements['autoScroll'].value=getScrolling();document.forms['guestForm'].elements['guestForm:_link_hidden_'].value='guestForm:guest_chooser_search_tab:_id68:col3143086Sort';if(document.forms['guestForm'].onsubmit){if(document.forms['guestForm'].onsubmit()) document.forms['guestForm'].submit();}else{document.forms['guestForm'].submit();}clear_guestForm();return false;" id="guestForm:guest_chooser_search_tab:_id68:col3143086Sort" class="itemTable_SortLink"><span id="guestForm:guest_chooser_search_tab:_id68:col3143086Header">First Name</span></a></th><th class="table_ColumnLeft"><a href="#" onclick="clear_guestForm();document.forms['guestForm'].elements['autoScroll'].value=getScrolling();document.forms['guestForm'].elements['guestForm:_link_hidden_'].value='guestForm:guest_chooser_search_tab:_id68:col3143087Sort';if(document.forms['guestForm'].onsubmit){if(document.forms['guestForm'].onsubmit()) document.forms['guestForm'].submit();}else{document.forms['guestForm'].submit();}clear_guestForm();return false;" id="guestForm:guest_chooser_search_tab:_id68:col3143087Sort" class="itemTable_SortLink sortedColumn"><span id="guestForm:guest_chooser_search_tab:_id68:col3143087Header">Last Name</span><img id="guestForm:guest_chooser_search_tab:_id68:col3143087SortAscImg" src="/er/images/ascending_icon.gif" class="ascendingIcon" /></a></th><th class="table_ColumnLeft"><a href="#" onclick="clear_guestForm();document.forms['guestForm'].elements['autoScroll'].value=getScrolling();document.forms['guestForm'].elements['guestForm:_link_hidden_'].value='guestForm:guest_chooser_search_tab:_id68:col3143089Sort';if(document.forms['guestForm'].onsubmit){if(document.forms['guestForm'].onsubmit()) document.forms['guestForm'].submit();}else{document.forms['guestForm'].submit();}clear_guestForm();return false;" id="guestForm:guest_chooser_search_tab:_id68:col3143089Sort" class="itemTable_SortLink"><span id="guestForm:guest_chooser_search_tab:_id68:col3143089Header">Title</span></a></th><th class="table_ColumnLeft"><a href="#" onclick="clear_guestForm();document.forms['guestForm'].elements['autoScroll'].value=getScrolling();document.forms['guestForm'].elements['guestForm:_link_hidden_'].value='guestForm:guest_chooser_search_tab:_id68:col3143088Sort';if(document.forms['guestForm'].onsubmit){if(document.forms['guestForm'].onsubmit()) document.forms['guestForm'].submit();}else{document.forms['guestForm'].submit();}clear_guestForm();return false;" id="guestForm:guest_chooser_search_tab:_id68:col3143088Sort" class="itemTable_SortLink"><span id="guestForm:guest_chooser_search_tab:_id68:col3143088Header">Company</span></a></th><th class="table_ColumnCenter"><a href="#" onclick="clear_guestForm();document.forms['guestForm'].elements['autoScroll'].value=getScrolling();document.forms['guestForm'].elements['guestForm:_link_hidden_'].value='guestForm:guest_chooser_search_tab:_id68:col3143084Sort';if(document.forms['guestForm'].onsubmit){if(document.forms['guestForm'].onsubmit()) document.forms['guestForm'].submit();}else{document.forms['guestForm'].submit();}clear_guestForm();return false;" id="guestForm:guest_chooser_search_tab:_id68:col3143084Sort" class="itemTable_SortLink"><img id="guestForm:guest_chooser_search_tab:_id68:col3143084Header" src="/er/images/myGuestIcon.gif" title="User-Created Guest" /></a></th></tr></thead>
+<tbody id="guestForm:guest_chooser_search_tab:_id68:tbody_element">
+<tr class="itemTable_Row1"><td class="table_ColumnCenter"><div><input type="checkbox" name="guestForm:guest_chooser_search_tab:_id68_0:searchSelectCheckbox" id="guestForm:guest_chooser_search_tab:_id68_0:searchSelectCheckbox" value="-1710780412" onclick="updateCheckboxAssociatedButtons('searchSelectCheckbox', 'addBtn1');" /></div></td><td class="table_ColumnAction"><a href="#" onclick="if (stopMultipleSubmits(this) == false) {return false;} ;clear_guestForm();document.forms['guestForm'].elements['autoScroll'].value=getScrolling();document.forms['guestForm'].elements['guestForm:_link_hidden_'].value='guestForm:guest_chooser_search_tab:_id68_0:viewBtn';document.forms['guestForm'].elements['pagingList'].value='NavigationForm.currentForm.searchForm.currentLevelData';document.forms['guestForm'].elements['itemId'].value='-1710780412';if(document.forms['guestForm'].onsubmit){if(document.forms['guestForm'].onsubmit()) document.forms['guestForm'].submit();}else{document.forms['guestForm'].submit();}clear_guestForm();return false;" id="guestForm:guest_chooser_search_tab:_id68_0:viewBtn" class="imagebutton"><img id="guestForm:guest_chooser_search_tab:_id68_0:viewBtnImage" src="/er/images/details_button.gif" title="Guest Details" /></a>
+</td><td class="table_ColumnLeft"><span id="guestForm:guest_chooser_search_tab:_id68_0:col3143086Val">Sarah</span></td><td class="table_ColumnLeft"><span id="guestForm:guest_chooser_search_tab:_id68_0:col3143087Val">Al-Ebrahim</span></td><td class="table_ColumnLeft"><span id="guestForm:guest_chooser_search_tab:_id68_0:col3143089Val">Research Assistant</span></td><td class="table_ColumnLeft"><span id="guestForm:guest_chooser_search_tab:_id68_0:col3143088Val">McKinsey(Contractor)</span></td><td class="table_ColumnCenter"></td></tr>
+<tr class="itemTable_Row2"><td class="table_ColumnCenter"><div><input type="checkbox" name="guestForm:guest_chooser_search_tab:_id68_1:searchSelectCheckbox" id="guestForm:guest_chooser_search_tab:_id68_1:searchSelectCheckbox" value="-1650693227" onclick="updateCheckboxAssociatedButtons('searchSelectCheckbox', 'addBtn1');" /></div></td><td class="table_ColumnAction"><a href="#" onclick="if (stopMultipleSubmits(this) == false) {return false;} ;clear_guestForm();document.forms['guestForm'].elements['autoScroll'].value=getScrolling();document.forms['guestForm'].elements['guestForm:_link_hidden_'].value='guestForm:guest_chooser_search_tab:_id68_1:viewBtn';document.forms['guestForm'].elements['pagingList'].value='NavigationForm.currentForm.searchForm.currentLevelData';document.forms['guestForm'].elements['itemId'].value='-1650693227';if(document.forms['guestForm'].onsubmit){if(document.forms['guestForm'].onsubmit()) document.forms['guestForm'].submit();}else{document.forms['guestForm'].submit();}clear_guestForm();return false;" id="guestForm:guest_chooser_search_tab:_id68_1:viewBtn" class="imagebutton"><img id="guestForm:guest_chooser_search_tab:_id68_1:viewBtnImage" src="/er/images/details_button.gif" title="Guest Details" /></a>
+</td><td class="table_ColumnLeft"><span id="guestForm:guest_chooser_search_tab:_id68_1:col3143086Val">Sarah</span></td><td class="table_ColumnLeft"><span id="guestForm:guest_chooser_search_tab:_id68_1:col3143087Val">Alkhedheiri</span></td><td class="table_ColumnLeft"><span id="guestForm:guest_chooser_search_tab:_id68_1:col3143089Val">Senior Implementation Facilitator</span></td><td class="table_ColumnLeft"><span id="guestForm:guest_chooser_search_tab:_id68_1:col3143088Val">McKinsey (Internal)</span></td><td class="table_ColumnCenter"></td></tr>
+<tr class="itemTable_Row1"><td class="table_ColumnCenter"><div><input type="checkbox" name="guestForm:guest_chooser_search_tab:_id68_2:searchSelectCheckbox" id="guestForm:guest_chooser_search_tab:_id68_2:searchSelectCheckbox" value="-1780686659" onclick="updateCheckboxAssociatedButtons('searchSelectCheckbox', 'addBtn1');" /></div></td><td class="table_ColumnAction"><a href="#" onclick="if (stopMultipleSubmits(this) == false) {return false;} ;clear_guestForm();document.forms['guestForm'].elements['autoScroll'].value=getScrolling();document.forms['guestForm'].elements['guestForm:_link_hidden_'].value='guestForm:guest_chooser_search_tab:_id68_2:viewBtn';document.forms['guestForm'].elements['pagingList'].value='NavigationForm.currentForm.searchForm.currentLevelData';document.forms['guestForm'].elements['itemId'].value='-1780686659';if(document.forms['guestForm'].onsubmit){if(document.forms['guestForm'].onsubmit()) document.forms['guestForm'].submit();}else{document.forms['guestForm'].submit();}clear_guestForm();return false;" id="guestForm:guest_chooser_search_tab:_id68_2:viewBtn" class="imagebutton"><img id="guestForm:guest_chooser_search_tab:_id68_2:viewBtnImage" src="/er/images/details_button.gif" title="Guest Details" /></a>
+</td><td class="table_ColumnLeft"><span id="guestForm:guest_chooser_search_tab:_id68_2:col3143086Val">Sarah</span></td><td class="table_ColumnLeft"><span id="guestForm:guest_chooser_search_tab:_id68_2:col3143087Val">Angier</span></td><td class="table_ColumnLeft"><span id="guestForm:guest_chooser_search_tab:_id68_2:col3143089Val">Global People Coordinator</span></td><td class="table_ColumnLeft"><span id="guestForm:guest_chooser_search_tab:_id68_2:col3143088Val">McKinsey (Internal)</span></td><td class="table_ColumnCenter"></td></tr>
+... (for first 10)
+
+c. Add the given person
+https://c309.extensity-hosting.com/er/suite/guest/guest_chooser.jsf
+'jsf_tree_64': '785',
+'jsf_state_64': '785',
+'jsf_viewid': '/suite/guest/guest_chooser.jsp',
+'guestForm:guestChooserTabbedPane_indexSubmit': '',
+'guestForm:guest_chooser_search_tab:namesVal': 'sarah lorenzana',
+'guestForm:guest_chooser_search_tab:guestType-PFAChoice': '',
+'guestForm:guest_chooser_search_tab:title-PFAField': '',
+'guestForm:guest_chooser_search_tab:company-PFAField': '',
+'guestForm:guest_chooser_search_tab:addressChoice': '',
+'guestForm:guest_chooser_search_tab:isPersonal-PFAChoice': '',
+'guestForm:guest_chooser_search_tab:guestListChoice': '',
+'guestForm:guest_chooser_search_tab:addBtn1': 'Add',
+'guestForm:guest_chooser_search_tab:_id68_0:searchSelectCheckbox': '-1805507422',
+'guestForm:guest_chooser_recent_tab:recentRadio': 'true',
+'guestForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'skipRequiredValidations': '',
+'corpDataListName': '',
+'item': '',
+'targetName': '',
+'itemId': '',
+'guestForm:_link_hidden_': '',
+'pagingList': ''
+
+c. OR add all listed people
+'jsf_tree_64': '784',
+'jsf_state_64': '784',
+'jsf_viewid': '/suite/guest/guest_chooser.jsp',
+'guestForm:guestChooserTabbedPane_indexSubmit': '',
+'guestForm:guest_chooser_search_tab:namesVal': 'sarah lorenzana',
+'guestForm:guest_chooser_search_tab:guestType-PFAChoice': '',
+'guestForm:guest_chooser_search_tab:title-PFAField': '',
+'guestForm:guest_chooser_search_tab:company-PFAField': '',
+'guestForm:guest_chooser_search_tab:addressChoice': '',
+'guestForm:guest_chooser_search_tab:isPersonal-PFAChoice': '',
+'guestForm:guest_chooser_search_tab:guestListChoice': '',
+'guestForm:guest_chooser_search_tab:addAllBtn1': 'Add All',
+'guestForm:guest_chooser_recent_tab:recentRadio': 'true',
+'guestForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'skipRequiredValidations': '',
+'corpDataListName': '',
+'item': '',
+'targetName': '',
+'itemId': '',
+'guestForm:_link_hidden_': '',
+'pagingList': ''
+
+d. Save
+'jsf_tree_64': '1990',
+'jsf_state_64': '1990',
+'jsf_viewid': '/suite/guest/guest_chooser.jsp',
+'guestForm:guestChooserTabbedPane_indexSubmit': '',
+'guestForm:guest_chooser_search_tab:namesVal': 'akash shah',
+'guestForm:guest_chooser_search_tab:guestType-PFAChoice': '',
+'guestForm:guest_chooser_search_tab:title-PFAField': '',
+'guestForm:guest_chooser_search_tab:company-PFAField': '',
+'guestForm:guest_chooser_search_tab:addressChoice': '',
+'guestForm:guest_chooser_search_tab:isPersonal-PFAChoice': '',
+'guestForm:guest_chooser_search_tab:guestListChoice': '',
+'guestForm:guest_chooser_search_tab:addBtn1': 'Add',
+'guestForm:guest_chooser_search_tab:_id68_0:searchSelectCheckbox': '-1991477128',
+'guestForm:guest_chooser_search_tab:_id68_1:searchSelectCheckbox': '-1997278254',
+'guestForm:guest_chooser_recent_tab:recentRadio': 'true',
+'guestForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'skipRequiredValidations': '',
+'corpDataListName': '',
+'item': '',
+'targetName': '',
+'itemId': '',
+'guestForm:_link_hidden_': '',
+'pagingList': ''
+
+
+x. Or create new person:
+https://c309.extensity-hosting.com/er/suite/guest/guest_chooser.jsf
+'jsf_tree_64': '1184',
+'jsf_state_64': '1184',
+'jsf_viewid': '/suite/guest/guest_chooser.jsp',
+'guestForm:guestChooserTabbedPane_indexSubmit': '',
+'guestForm:guest_chooser_search_tab:namesVal': 'akash shah',
+'guestForm:guest_chooser_search_tab:guestType-PFAChoice': '',
+'guestForm:guest_chooser_search_tab:title-PFAField': '',
+'guestForm:guest_chooser_search_tab:company-PFAField': '',
+'guestForm:guest_chooser_search_tab:addressChoice': '',
+'guestForm:guest_chooser_search_tab:isPersonal-PFAChoice': '',
+'guestForm:guest_chooser_search_tab:guestListChoice': '',
+'guestForm:guest_chooser_search_tab:createBtn1': 'New',
+'guestForm:guest_chooser_search_tab:_id68_0:searchSelectCheckbox': '2140086646',
+'guestForm:guest_chooser_recent_tab:recentRadio': 'true',
+'guestForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'skipRequiredValidations': '',
+'corpDataListName': '',
+'item': '',
+'targetName': '',
+'itemId': '',
+'guestForm:_link_hidden_': '',
+'pagingList': ''
+
+https://c309.extensity-hosting.com/er/suite/guest/guest_entry.jsf
+'jsf_tree_64': '1186',
+'jsf_state_64': '1186',
+'jsf_viewid': '/suite/guest/guest_entry.jsp',
+'guestEntryForm:guestPrimaryToggleState': 'true',
+'guestEntryForm:firstName-PFAField': 'Test',
+'guestEntryForm:lastName-PFAField': 'Person2',
+'guestEntryForm:guestType-PFAChoice': '1', # 1 for External, 0 for Internal
+'guestEntryForm:title-PFAField': '',
+'guestEntryForm:company-PFAField': 'Google',
+'guestEntryForm:guestAddressesToggleState': 'true',
+'guestEntryForm:saveBtn': 'Save',
+'guestEntryForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'guestEntryForm:_link_hidden_': ''
+
+Final submit:
+https://c309.extensity-hosting.com/er/app/er_line.jsf
+'editItemForm:erLineStandardToggleState': 'true',
+'editItemForm:date-PFAField': '12/10/14',
+'editItemForm:amountVal-PFAField': '200.00',
+'editItemForm:currencyVal-PFAChoice': '3500501',
+'editItemForm:ADC_1000080051': 'type:SubExpenseType3;id:-1975427178;',
+'editItemForm:ADC_-1999999878': 'type:MealType;id:-1999904923;',
+'editItemForm:ADC_3048902': 'type:Vendor;id:2140081945;',
+'editItemForm:ADC_3048906_choice': '3001280',
+'editItemForm:ADC_3048906': 'San Francisco/California/United States',
+'editItemForm:receipt-PFAField': 'true',
+'editItemForm:erLineGuestToggleState': 'true',
+'editItemForm:guest_wrapper_panel:_id134PagingControlsPageVal': '1',
+'editItemForm:erLineAllocationToggleState': 'true',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice_choice': '-1644285007',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice': 'WBL027',
+'editItemForm:erLineOptionalADCToggleState': 'true',
+'editItemForm:erLineNoteToggleState': 'true',
+'editItemForm:note_panel:noteFld': '',
+'editItemForm:saveBtn2': 'Save',
+'editItemForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'chooserId': '',
+'corpDataName': '',
+'allocationName': '',
+'pagingEnabled': '',
+'bobTypeName': '',
+'corpDataListName': '',
+'editingLineItem': '',
+'bobElement': '',
+'targetName': '',
+'lineItemId': '',
+'itemId': '',
+'pagingList': '',
+'skipRequiredValidations': '',
+'item': '',
+'bobRef': '',
+'editItemForm:_link_hidden_': ''
+
+
+Taxi / Car Service
+1. Create as usual
+2. Submit
+
+'jsf_tree_64': '2688',
+'jsf_state_64': '2688',
+'jsf_viewid': '/app/er_line.jsp',
+'editItemForm:erLineStandardToggleState': 'true',
+'editItemForm:date-PFAField': '12/10/14',
+'editItemForm:amountVal-PFAField': '50',
+'editItemForm:currencyVal-PFAChoice': '3500501',
+'editItemForm:ADC_-1999888637': 'type:FromTo;id:-1999888583;',
+'editItemForm:ADC_-1999888627': 'type:FromTo;id:-1999888571;',
+'editItemForm:ADC_3048906_choice': '3001280',
+'editItemForm:ADC_3048906': 'San Francisco/California/United States',
+'editItemForm:receipt-PFAField': 'true',
+'editItemForm:erLineAllocationToggleState': 'true',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice_choice': '-1644285007',
+'editItemForm:allocation_panel:multipleAllocationTable_0:projectChoice': 'WBL027',
+'editItemForm:erLineOptionalADCToggleState': 'true',
+'editItemForm:erLineNoteToggleState': 'true',
+'editItemForm:note_panel:noteFld': '',
+'editItemForm:saveBtn2': 'Save',
+'editItemForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'chooserId': '',
+'allocationName': '',
+'skipRequiredValidations': '',
+'corpDataListName': '',
+'editingLineItem': '',
+'item': '',
+'lineItemId': '',
+'targetName': '',
+'editItemForm:_link_hidden_': '',
+
+
+3. Sometimes, we'll have to submit an explanation
+https://c309.extensity-hosting.com/er/suite/brv/brv_line_explanations.jsf
+(i.e. when we submit with an "Other" source or destination, or if it's between "Home" and "Office")
+Search for keyword "Explanation"
+
+'jsf_tree_64': '2699',
+'jsf_state_64': '2699',
+'jsf_viewid': '/suite/brv/brv_line_explanations.jsp',
+'lineExplanationsForm:brvDocExplanationToggleState': 'true',
+'lineExplanationsForm:explanationVal': 'Short explanation',
+'lineExplanationsForm:continueBtn2': 'Continue',
+'lineExplanationsForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'lineExplanationsForm:_link_hidden_': ''
+
+4. Done
+
+
+
+LINE WARNINGS (e.g. for similar entries)
+Contains lineWarning after submission
+https://c309.extensity-hosting.com/er/suite/brv/brv_line_warnings.jsf
+'jsf_tree_64': '2967',
+'jsf_state_64': '2967',
+'jsf_viewid': '/suite/brv/brv_line_warnings.jsp',
+'lineWarningsForm:warnings11210307567State': 'false',
+'lineWarningsForm:continueBtn2': 'Continue',
+'lineWarningsForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'lineWarningsForm:_link_hidden_': ''
+
+
+
+
+UPLOADS:
+1. GET https://c309.extensity-hosting.com/er/suite/receipts/docReceipt_upload.jsf
+2. POST
+'jsf_tree_64': '3041',
+'jsf_state_64': '3041',
+'jsf_viewid': '/suite/receipts/docReceipt_upload.jsp',
+'deleteConfirmMessage': 'Are you sure you want to delete this item?',
+'prevView': 'null',
+'receiptDocForm:uploadedFile1': ...
+ receiptDocForm:uploadedFile2': ...
+
+'receiptDocForm:uploadDocReceiptBtn': 'Attach',
+'receiptDocForm_SUBMIT': '1',
+'autoScroll': '0,0',
+'receiptDocForm:_link_hidden_': '',
+'jsf_tree_64': '3041',
+'jsf_state_64': '3041',
+'jsf_viewid': '/suite/receipts/docReceipt_upload.jsp',
+'deleteConfirmMessage': 'Are you sure you want to delete this item?',
+'prevView': 'null',
+'receiptDocForm:uploadedFile1':; filename="Journal.txt"
+

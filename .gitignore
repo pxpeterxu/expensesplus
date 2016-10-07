@@ -1,0 +1,8 @@
+**/log*.txt
+.idea
+~*
+dist
+build
+xlwings_log.txt
+**/*.pyc
+ExpensesPlus
