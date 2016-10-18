@@ -4,3 +4,4 @@ MKDIR ExpensesPlus
 MKDIR ExpensesPlus\dist
 COPY dist ExpensesPlus\dist
 COPY Expenses.xlsm ExpensesPlus
+PAUSE

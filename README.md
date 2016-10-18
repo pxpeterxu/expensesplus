@@ -29,9 +29,11 @@ Features include:
 
 1. Clone this repository from GitHub
 2. Install dependencies:
-    * **[Python 2.7](https://www.python.org/downloads/)**
-    * **xlwings** (by running `pip install xlwings`)
-	* **[py2exe](https://sourceforge.net/projects/py2exe/files/py2exe/0.6.9/)**
+    * **[Python 2.7](https://www.python.org/downloads/)**: download the **Windows x86-64 MSI installer**
+    * **xlwings v0.3.6** (by running `pip install xlwings==0.3.6`)
+    * **requests v2** (by running `pip install requests`)
+    * **[pywin32](https://sourceforge.net/projects/pywin32/files/pywin32/)**: make sure to get the latest version for Python 2.7, 64-bit (it should have **win-amd64-py2.7.exe** at the end)
+  	* **[py2exe](https://sourceforge.net/projects/py2exe/files/py2exe/0.6.9/)**
 3. Make sure everything is working by running `python test.py` and seeing if it exits without any error messages
 4. Open the Expenses.xlsm, click `Developer -> Visual Basic` [(see how to enable the Developer tab if you don't see it)](https://www.techonthenet.com/excel/questions/developer_tab2013.php)
 5. Change the first line of the `ExpensesPlus` module and change `DEBUGGING = False` to `DEBUGGING = true`
